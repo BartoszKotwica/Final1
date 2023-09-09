@@ -24,7 +24,7 @@ private static final String UPDATE_PRODUCT_QUERY = "UPDATE product SET name = ?,
 private static final String FIND_PRODUCT_BY_NAME_QUERY = "SELECT * FROM product WHERE name = ?;";
 
 
-public Product read(Integer productId) {
+public Product read (Integer productId) {
     Product product = new Product();
     try(Connection connection = DbUtil.getConnection();
         PreparedStatement statement = connection.prepareStatement(READ_PRODUCT_QUERY)) {

@@ -88,7 +88,7 @@ public class CartItemDao {
         return cartItemList;
     }
 
-    public void updateCartItem(CartItem cartItem) {
+    public void updateCartItem (CartItem cartItem) {
         try (Connection connection = DbUtil.getConnection();
              PreparedStatement statement = connection.prepareStatement(UPDATE_CART_ITEM_QUERY)) {
             statement.setInt(1, cartItem.getUserId());

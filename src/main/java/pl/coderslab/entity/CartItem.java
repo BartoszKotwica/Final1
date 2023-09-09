@@ -20,7 +20,7 @@ public class CartItem {
     @NotNull
     private int quantity;
 
-    public CartItem(int userId, int productId, int quantity) {
+    public CartItem (int userId, int productId, int quantity) {
         this.userId = userId;
         this.productId = productId;
         this.quantity = quantity;

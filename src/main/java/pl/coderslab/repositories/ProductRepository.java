@@ -9,9 +9,9 @@ import java.util.List;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
-    List<Product> findProductById(Integer id);
-    List<Product> findProductByName(String name);
-    List<Product> findProductByPrice(Double price);
+    Product findProductById(Integer id);
+    Product findProductByName(String name);
+    Product findProductByPrice(Double price);
 
 
     @Query("select p from Product p where p.id = :id")

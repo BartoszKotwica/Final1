@@ -26,7 +26,7 @@ public class UserDao {
     private static final String FIND_BY_USERNAME_QUERY = "SELECT * FROM user WHERE user_name = ?;";
 
 
-    public User read(Integer userId) {
+    public User read (Integer userId) {
         User user = new User();
         try(Connection connection = DbUtil.getConnection();
             PreparedStatement statement = connection.prepareStatement(READ_USER_QUERY)) {

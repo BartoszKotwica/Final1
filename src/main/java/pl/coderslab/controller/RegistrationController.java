@@ -21,7 +21,7 @@ public class RegistrationController {
     private final UserService userService;
 
     @Autowired
-    public RegistrationController(UserService userService) {
+    public RegistrationController (UserService userService) {
         this.userService = userService;
     }
     @GetMapping("/")
